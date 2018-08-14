@@ -1,0 +1,416 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="API documentation for the Rust `js_sys` crate."><meta name="keywords" content="rust, rustlang, rust-lang, js_sys"><title>js_sys - Rust</title><link rel="stylesheet" type="text/css" href="../normalize.css"><link rel="stylesheet" type="text/css" href="../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../dark.css"><link rel="stylesheet" type="text/css" href="../light.css" id="themeStyle"><script src="../storage.js"></script></head><body class="rustdoc mod"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><p class='location'>Crate js_sys</p><div class="sidebar-elems"><div class="block items"><ul><li><a href="#modules">Modules</a></li><li><a href="#structs">Structs</a></li><li><a href="#functions">Functions</a></li></ul></div><p class='location'></p><script>window.sidebarCurrent = {name: 'js_sys', ty: 'mod', relpath: '../'};</script></div></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../theme.js"></script><nav class="sub"><form class="search-form js-only"><div class="search-container"><input class="search-input" name="search" autocomplete="off" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"><a id="settings-menu" href="../settings.html"><img src="../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><h1 class='fqn'><span class='out-of-band'><span id='render-detail'><a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">[<span class='inner'>&#x2212;</span>]</a></span><a class='srclink' href='../src/js_sys/lib.rs.html#1-3541' title='goto source code'>[src]</a></span><span class='in-band'>Crate <a class="mod" href=''>js_sys</a></span></h1><div class='docblock'><p>Bindings to JavaScript's standard, built-in objects, including their methods
+and properties.</p>
+<p>This does <em>not</em> include any Web, Node, or any other JS environment
+APIs. Only the things that are guaranteed to exist in the global scope by
+the ECMAScript standard.</p>
+<p>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects</p>
+<h2 id="a-note-about-camelcase-snake_case-and-naming-conventions" class="section-header"><a href="#a-note-about-camelcase-snake_case-and-naming-conventions">A Note About <code>camelCase</code>, <code>snake_case</code>, and Naming Conventions</a></h2>
+<p>JavaScript's global objects use <code>camelCase</code> naming conventions for functions
+and methods, but Rust style is to use <code>snake_case</code>. These bindings expose
+the Rust style <code>snake_case</code> name. Additionally, acronyms within a method
+name are all lower case, where as in JavaScript they are all upper case. For
+example, <code>decodeURI</code> in JavaScript is exposed as <code>decode_uri</code> in these
+bindings.</p>
+</div><h2 id='modules' class='section-header'><a href="#modules">Modules</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="mod" href="Intl/index.html"
+                                  title='mod js_sys::Intl'>Intl</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='structs' class='section-header'><a href="#structs">Structs</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Array.html"
+                                  title='struct js_sys::Array'>Array</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ArrayBuffer.html"
+                                  title='struct js_sys::ArrayBuffer'>ArrayBuffer</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Boolean.html"
+                                  title='struct js_sys::Boolean'>Boolean</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.DataView.html"
+                                  title='struct js_sys::DataView'>DataView</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Date.html"
+                                  title='struct js_sys::Date'>Date</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Error.html"
+                                  title='struct js_sys::Error'>Error</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.EvalError.html"
+                                  title='struct js_sys::EvalError'>EvalError</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Float32Array.html"
+                                  title='struct js_sys::Float32Array'>Float32Array</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Float64Array.html"
+                                  title='struct js_sys::Float64Array'>Float64Array</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Function.html"
+                                  title='struct js_sys::Function'>Function</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Generator.html"
+                                  title='struct js_sys::Generator'>Generator</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Int16Array.html"
+                                  title='struct js_sys::Int16Array'>Int16Array</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Int32Array.html"
+                                  title='struct js_sys::Int32Array'>Int32Array</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Int8Array.html"
+                                  title='struct js_sys::Int8Array'>Int8Array</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Iterator.html"
+                                  title='struct js_sys::Iterator'>Iterator</a></td>
+                           <td class='docblock-short'>
+                                <p>Any object that conforms to the JS iterator protocol. For example,
+something returned by <code>myArray[Symbol.iterator]()</code>.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.IteratorNext.html"
+                                  title='struct js_sys::IteratorNext'>IteratorNext</a></td>
+                           <td class='docblock-short'>
+                                <p>The result of calling <code>next()</code> on a JS iterator.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.JSON.html"
+                                  title='struct js_sys::JSON'>JSON</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.JsString.html"
+                                  title='struct js_sys::JsString'>JsString</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Map.html"
+                                  title='struct js_sys::Map'>Map</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Math.html"
+                                  title='struct js_sys::Math'>Math</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Number.html"
+                                  title='struct js_sys::Number'>Number</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Object.html"
+                                  title='struct js_sys::Object'>Object</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Promise.html"
+                                  title='struct js_sys::Promise'>Promise</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>Promise</code> object represents the eventual completion (or failure) of
+an asynchronous operation, and its resulting value.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Proxy.html"
+                                  title='struct js_sys::Proxy'>Proxy</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.RangeError.html"
+                                  title='struct js_sys::RangeError'>RangeError</a></td>
+                           <td class='docblock-short'>
+                                <p>The RangeError object indicates an error when a value is not in the set
+or range of allowed values.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.ReferenceError.html"
+                                  title='struct js_sys::ReferenceError'>ReferenceError</a></td>
+                           <td class='docblock-short'>
+                                <p>The ReferenceError object represents an error when a non-existent
+variable is referenced.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Reflect.html"
+                                  title='struct js_sys::Reflect'>Reflect</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.RegExp.html"
+                                  title='struct js_sys::RegExp'>RegExp</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Set.html"
+                                  title='struct js_sys::Set'>Set</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Symbol.html"
+                                  title='struct js_sys::Symbol'>Symbol</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.SyntaxError.html"
+                                  title='struct js_sys::SyntaxError'>SyntaxError</a></td>
+                           <td class='docblock-short'>
+                                <p>A SyntaxError is thrown when the JavaScript engine encounters tokens or
+token order that does not conform to the syntax of the language when
+parsing code.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.TypeError.html"
+                                  title='struct js_sys::TypeError'>TypeError</a></td>
+                           <td class='docblock-short'>
+                                <p>The TypeError object represents an error when a value is not of the
+expected type.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Uint16Array.html"
+                                  title='struct js_sys::Uint16Array'>Uint16Array</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Uint32Array.html"
+                                  title='struct js_sys::Uint32Array'>Uint32Array</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Uint8Array.html"
+                                  title='struct js_sys::Uint8Array'>Uint8Array</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.Uint8ClampedArray.html"
+                                  title='struct js_sys::Uint8ClampedArray'>Uint8ClampedArray</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.UriError.html"
+                                  title='struct js_sys::UriError'>UriError</a></td>
+                           <td class='docblock-short'>
+                                <p>The URIError object represents an error when a global URI handling
+function was used in a wrong way.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.WeakMap.html"
+                                  title='struct js_sys::WeakMap'>WeakMap</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.WeakSet.html"
+                                  title='struct js_sys::WeakSet'>WeakSet</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="struct" href="struct.WebAssembly.html"
+                                  title='struct js_sys::WebAssembly'>WebAssembly</a></td>
+                           <td class='docblock-short'>
+                                
+                           </td>
+                       </tr></table><h2 id='functions' class='section-header'><a href="#functions">Functions</a></h2>
+<table>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.decode_uri.html"
+                                  title='fn js_sys::decode_uri'>decode_uri</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>decodeURI()</code> function decodes a Uniform Resource Identifier (URI)
+previously created by <code>encodeURI</code> or by a similar routine.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.decode_uri_component.html"
+                                  title='fn js_sys::decode_uri_component'>decode_uri_component</a></td>
+                           <td class='docblock-short'>
+                                <p>The decodeURIComponent() function decodes a Uniform Resource Identifier (URI) component
+previously created by encodeURIComponent or by a similar routine.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.encode_uri.html"
+                                  title='fn js_sys::encode_uri'>encode_uri</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>encodeURI()</code> function encodes a Uniform Resource Identifier (URI)
+by replacing each instance of certain characters by one, two, three, or
+four escape sequences representing the UTF-8 encoding of the character
+(will only be four escape sequences for characters composed of two
+&quot;surrogate&quot; characters).</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.encode_uri_component.html"
+                                  title='fn js_sys::encode_uri_component'>encode_uri_component</a></td>
+                           <td class='docblock-short'>
+                                <p>The encodeURIComponent() function encodes a Uniform Resource Identifier (URI) component
+by replacing each instance of certain characters by one, two, three, or four escape sequences
+representing the UTF-8 encoding of the character
+(will only be four escape sequences for characters composed of two &quot;surrogate&quot; characters).</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.escape.html"
+                                  title='fn js_sys::escape'>escape</a></td>
+                           <td class='docblock-short'>
+                                <p>The escape() function computes a new string in which certain characters have been
+replaced by a hexadecimal escape sequence.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.eval.html"
+                                  title='fn js_sys::eval'>eval</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>eval()</code> function evaluates JavaScript code represented as a string.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.is_finite.html"
+                                  title='fn js_sys::is_finite'>is_finite</a></td>
+                           <td class='docblock-short'>
+                                <p>The global isFinite() function determines whether the passed value is a finite number.
+If  needed, the parameter is first converted to a number.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.parse_float.html"
+                                  title='fn js_sys::parse_float'>parse_float</a></td>
+                           <td class='docblock-short'>
+                                <p>The parseFloat() function parses an argument and returns a floating point number,
+or NaN on error.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.parse_int.html"
+                                  title='fn js_sys::parse_int'>parse_int</a></td>
+                           <td class='docblock-short'>
+                                <p>The <code>parseInt()</code> function parses a string argument and returns an integer
+of the specified radix (the base in mathematical numeral systems), or NaN on error.</p>
+
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
+                           <td><a class="fn" href="fn.unescape.html"
+                                  title='fn js_sys::unescape'>unescape</a></td>
+                           <td class='docblock-short'>
+                                <p>The unescape() function computes a new string in which hexadecimal escape
+sequences are replaced with the character that it represents. The escape sequences might
+be introduced by a function like escape. Usually, decodeURI or decodeURIComponent
+are preferred over unescape.</p>
+
+                           </td>
+                       </tr></table></section><section id="search" class="content hidden"></section><section class="footer"></section><aside id="help" class="hidden"><div><h1 class="hidden">Help</h1><div class="shortcuts"><h2>Keyboard Shortcuts</h2><dl><dt><kbd>?</kbd></dt><dd>Show this help dialog</dd><dt><kbd>S</kbd></dt><dd>Focus the search field</dd><dt><kbd>↑</kbd></dt><dd>Move up in search results</dd><dt><kbd>↓</kbd></dt><dd>Move down in search results</dd><dt><kbd>↹</kbd></dt><dd>Switch tab</dd><dt><kbd>&#9166;</kbd></dt><dd>Go to active search result</dd><dt><kbd>+</kbd></dt><dd>Expand all sections</dd><dt><kbd>-</kbd></dt><dd>Collapse all sections</dd></dl></div><div class="infos"><h2>Search Tricks</h2><p>Prefix searches with a type followed by a colon (e.g. <code>fn:</code>) to restrict the search to a given type.</p><p>Accepted types are: <code>fn</code>, <code>mod</code>, <code>struct</code>, <code>enum</code>, <code>trait</code>, <code>type</code>, <code>macro</code>, and <code>const</code>.</p><p>Search functions by type signature (e.g. <code>vec -> usize</code> or <code>* -> vec</code>)</p><p>Search multiple things at once by splitting your query with comma (e.g. <code>str,u8</code> or <code>String,struct:Vec,test</code>)</p></div></div></aside><script>window.rootPath = "../";window.currentCrate = "js_sys";</script><script src="../aliases.js"></script><script src="../main.js"></script><script defer src="../search-index.js"></script></body></html>
